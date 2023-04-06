@@ -6,12 +6,12 @@
 //
 import SwiftUI
 import Foundation
-
+@Binding var  enteredWord:MadLib
 struct NounView: View {
     var body: some View {
         
         NavigationLink("Verb") {
-            VerbView()
+            VerbView(enteredWord: $enteredWord)
         }
         
     }
