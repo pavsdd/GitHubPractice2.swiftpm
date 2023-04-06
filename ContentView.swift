@@ -5,7 +5,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             NavigationLink("Noun") {
-                NounView(enteredWord: $enteredWord)
+                NounView(enteredWord: enteredWord)
             }
         }
     }

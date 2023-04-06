@@ -8,7 +8,7 @@ import SwiftUI
 import Foundation
 
 struct NounView: View {
-    @Binding var  enteredWord:MadLib
+    @State var  enteredWord:MadLib
     var body: some View {
         
         NavigationLink("Verb") {
