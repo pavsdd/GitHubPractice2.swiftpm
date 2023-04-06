@@ -9,8 +9,8 @@ import Foundation
 
 struct NounView: View {
     var body: some View {
-        
-        NavigationLink("Verb View", destination: VerbView)
-        
+        NavigationLink("Verb") {
+            VerbView()
+        }
     }
 }

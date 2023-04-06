@@ -9,8 +9,8 @@ import Foundation
 
 struct AdjectiveView: View {
     var body: some View {
-        NavigationLink("SummaryView", destination: SummaryView)
-        
-        
+        NavigationLink("SummaryView"){
+            SummaryView()
+        }
     }
 }
