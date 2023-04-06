@@ -13,7 +13,7 @@ struct VerbView: View {
     var body: some View {
         TextField("Here", text: $enteredWord.Verb)
         NavigationLink("Adjective") {
-            AdjectiveView()
+            AdjectiveView(enteredWord: $enteredWord)
         }
         
     }
