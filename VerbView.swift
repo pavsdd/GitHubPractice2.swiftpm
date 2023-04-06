@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 
 struct VerbView: View {
+    @Binding var enteredWord:MadLib
     var body: some View {
-        
+        TextField("Here", text: $enteredWord.Verb)
         NavigationLink("Adjective") {
             AdjectiveView()
         }
